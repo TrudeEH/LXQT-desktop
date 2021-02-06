@@ -1,0 +1,3 @@
+feh --bg-scale ~/.config/TrudeOS/wallpaper.jpeg &
+compton --config ~/.config/compton/compton.conf &
+tint2 &
