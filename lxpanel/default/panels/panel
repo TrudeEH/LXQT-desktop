@@ -51,6 +51,15 @@ Plugin {
     Button {
       id=firefox.desktop
     }
+    Button {
+      id=firefox-esr.desktop
+    }
+    Button {
+      id=lxterminal.desktop
+    }
+    Button {
+      id=pcmanfm.desktop
+    }
   }
 }
 Plugin {
@@ -65,8 +74,8 @@ Plugin {
     Warning1Color=#fff000
     Warning2Color=#ff0000
     AutomaticLevels=1
-    Warning1Temp=95
-    Warning2Temp=100
+    Warning1Temp=140
+    Warning2Temp=145
     AutomaticSensor=1
   }
 }
