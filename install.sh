@@ -1,7 +1,5 @@
-# Basic utilities:
-apt install -y sudo geany
 # Desktop:
-apt install -y openbox obconf obmenu lightdm pcmanfm git dmenu feh compton lxappearance firefox-esr mate-wallpapers breeze-gtk-theme menu tint2 #[ou lxpanel] lxterminal
+apt install -y openbox obconf obmenu lightdm pcmanfm git dmenu feh compton lxappearance firefox-esr mate-wallpapers breeze-gtk-theme menu lxpanel network-manager-applet flameshot #[ou tint2] lxterminal
 
 # Desktop Config:
 mkdir ~/.config/ &> /dev/null
