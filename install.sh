@@ -22,3 +22,4 @@ cp -r openbox ~/.config/
 # Tela Circle Icon Theme
 git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git
 cd Tela-circle-icon-theme ; ./install.sh ; cd .. ; rm -rf Tela-circle-icon-theme
+
