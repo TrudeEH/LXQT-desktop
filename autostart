@@ -1,5 +1,0 @@
-feh --bg-scale ~/.config/TrudeOS/wallpaper.jpeg &
-compton --config ~/.config/compton/compton.conf &
-lxpanel &
-nm-applet &
-flameshot &
