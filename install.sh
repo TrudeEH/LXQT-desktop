@@ -1,7 +1,9 @@
 #! /bin/bash
 
 # LXDE + Themes install
-sudo apt install -y lxde flameshot breeze-cursor-theme breeze-gtk-theme firefox-esr
+sudo apt install -y lxde flameshot breeze-cursor-theme breeze-gtk-theme
+sudo apt install -y firefox-esr
+sud oapt install -y firefox
 
 # OS config
 mkdir ~/.TrudeOS
