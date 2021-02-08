@@ -1,25 +1,24 @@
 #! /bin/bash
 
-# LXDE + Themes install
-sudo apt install -y lxde flameshot breeze-cursor-theme breeze-gtk-theme
-sudo apt install -y firefox-esr
-sud oapt install -y firefox
-
-# OS config
-mkdir ~/.TrudeOS
-cp wallpaper.jpeg ~/.TrudeOS
-cp menu-icon.png ~/.TrudeOS
+################
+# LXQT config  #
+#   by TrudeEH #
+################
 
 # DE config
-rm -r ~/.config/lxpanel
-rm -r ~/.config/lxsession
-rm -r ~/.config/lxterminal
+rm -r ~/.config/gtk-3.0
+rm -r ~/.config/lxqt
 rm -r ~/.config/openbox
+rm -r ~/.config/pcmanfm-qt
+rm -r ~/.config/qterminal.org
+rm -r ~/.config/compton.conf
 
-cp -r lxpanel ~/.config/
-cp -r lxsession ~/.config/
-cp -r lxterminal ~/.config/
+cp -r gtk-3.0 ~/.config/
+cp -r lxqt ~/.config/
 cp -r openbox ~/.config/
+cp -r pcmanfm-qt ~/.config/
+cp -r qterminal.org ~/.config/
+cp -r compton.conf ~/.config/
 
 # Tela Circle Icon Theme
 git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git
