@@ -22,6 +22,12 @@ cp -r qterminal.org ~/.config/
 cp -r compton.conf ~/.config/
 cp xscreensaver ~/.xscreensaver
 
+# Icons
+sudo rm -r /usr/share/TrudeOS
+sudo mkdir /usr/share/TrudeOS
+sudo cp menu-icon.png /usr/share/TrudeOS
+sudo cp wallpaper.jpg /usr/share/TrudeOS
+
 # Tela Circle Icon Theme
 git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git
 cd Tela-circle-icon-theme ; ./install.sh ; cd .. ; rm -rf Tela-circle-icon-theme
