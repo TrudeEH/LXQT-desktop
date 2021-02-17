@@ -5,6 +5,8 @@
 #   by TrudeEH #
 ################
 
+sudo aaaaaaaa &> /dev/null
+
 # Update base:
 echo
 echo "[+] Updating the system base..."
@@ -27,7 +29,7 @@ echo
 echo "------------------------------------------------"
 echo "Please select slim as the default window manager"
 echo "------------------------------------------------"
-sleep 5000
+sleep 5
 
 sudo apt install slim -y
 
