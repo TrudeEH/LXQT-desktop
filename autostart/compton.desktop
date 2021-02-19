@@ -3,3 +3,4 @@ Exec=compton &
 Name=compton
 Type=Application
 Version=1.0
+X-LXQt-Need-Tray=true

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Exec=/usr/bin/anydesk --tray
+GenericName=AnyDeskTray
+Hidden=true
+Icon=anydesk
+Name=AnyDesk Tray
+Terminal=false
+Type=Application
+X-GNOME-FullName=AnyDesk
