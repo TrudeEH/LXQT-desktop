@@ -43,6 +43,7 @@ rm -r ~/.config/compton.conf &> /dev/null
 rm ~/.xscreensaver &> /dev/null
 sudo rm -rf /usr/share/slim/themes/tslim &> /dev/null
 sudo rm /etc/slim.conf &> /dev/null
+rm ~/.config/autostart/*
 
 cp -r gtk-3.0 ~/.config/
 cp -r lxqt ~/.config/
@@ -53,6 +54,7 @@ cp -r compton.conf ~/.config/
 cp xscreensaver ~/.xscreensaver
 sudo cp -r tslim/ /usr/share/slim/themes
 sudo cp slim.conf /etc/slim.conf
+cp autostart/* ~/.config/autostart
 
 # Icons
 sudo rm -r /usr/share/TrudeOS

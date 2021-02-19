@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=telegram-desktop &
+Name=telegram
+Type=Application
+Version=1.0
