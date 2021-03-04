@@ -43,7 +43,8 @@ rm -r ~/.config/compton.conf &> /dev/null
 rm ~/.xscreensaver &> /dev/null
 sudo rm -rf /usr/share/slim/themes/tslim &> /dev/null
 sudo rm /etc/slim.conf &> /dev/null
-rm ~/.config/autostart/*
+mkdir ~/.config/autostart &> /dev/null
+rm ~/.config/autostart/* &> /dev/null
 
 cp -r gtk-3.0 ~/.config/
 cp -r lxqt ~/.config/
