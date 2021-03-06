@@ -31,7 +31,7 @@ echo "Please select slim as the default window manager"
 echo "------------------------------------------------"
 sleep 5
 
-sudo apt install slim -y
+sudo apt install zsh zsh-syntax-highlighting fonts-powerline slim -y
 
 # DE config
 rm -r ~/.config/gtk-3.0 &> /dev/null
@@ -45,6 +45,8 @@ sudo rm -rf /usr/share/slim/themes/tslim &> /dev/null
 sudo rm /etc/slim.conf &> /dev/null
 mkdir ~/.config/autostart &> /dev/null
 rm ~/.config/autostart/* &> /dev/null
+mkdir ~/.fonts &> /dev/null
+sudo mkdir /usr/local/share/fonts/ &> /dev/null
 
 cp -r gtk-3.0 ~/.config/
 cp -r lxqt ~/.config/
@@ -56,6 +58,8 @@ cp xscreensaver ~/.xscreensaver
 sudo cp -r tslim/ /usr/share/slim/themes
 sudo cp slim.conf /etc/slim.conf
 cp autostart/* ~/.config/autostart
+cp fonts/* ~/.fonts
+sudo cp fonts/* /usr/local/share/fonts/
 
 # Icons
 sudo rm -r /usr/share/TrudeOS
@@ -67,3 +71,16 @@ sudo cp wallpaper.jpg /usr/share/TrudeOS
 git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git
 cd Tela-circle-icon-theme ; ./install.sh ; cd .. ; rm -rf Tela-circle-icon-theme
 
+# ZSH
+rm ~/.zshrc &> /dev/null
+cp zshrc ~/.zshrc 
+rm ~/.p10k.zsh &> /dev/null
+cp p10k.zsh ~/.p10k.zsh
+
+sudo chsh -s $(which zsh)
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
+git clone https://github.com/romkatv/powerlevel10k $ZSH_CUSTOM/themes/powerlevel10k
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
