@@ -31,7 +31,7 @@ echo "Please select slim as the default window manager"
 echo "------------------------------------------------"
 sleep 5
 
-sudo apt install zsh zsh-syntax-highlighting fonts-powerline slim -y
+sudo apt install zsh zsh-syntax-highlighting fonts-powerline slim xterm -y
 
 # DE config
 rm -r ~/.config/gtk-3.0 &> /dev/null
@@ -78,7 +78,7 @@ rm ~/.p10k.zsh &> /dev/null
 cp p10k.zsh ~/.p10k.zsh
 
 sudo chsh -s $(which zsh)
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+xterm -e 'sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
 
 ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 git clone https://github.com/romkatv/powerlevel10k $ZSH_CUSTOM/themes/powerlevel10k
